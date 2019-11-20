@@ -1,34 +1,18 @@
 package br.com.tw.cursodevsoftwarecleancode;
 
-import br.com.tw.cursodevsoftwarecleancode.exercise1.Project;
+import br.com.tw.cursodevsoftwarecleancode.exercise1.Projeto;
+
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 public class Main {
 
     public static void main(String[] args) {
-        Project project = new Project();
-        //Seta Dias restantes para o fim do projeto
-        project.setDiresfipro(80);
-        project.setEntregue(false);
+        ZonedDateTime dataFinal = ZonedDateTime.of(2020, 12, 31, 23, 59, 59, 0, ZoneId.systemDefault());
 
-        String result = checkProject(project);
+        Projeto projeto = new Projeto(dataFinal);
 
-        //Print result
-        System.out.println("Resultado do projeto: " + result);
-    }
-
-    private static String checkProject(Project project) {
-        //Dias restantes para o fim do projeto
-        int diresfipro = project.getDiresfipro();
-
-        if (diresfipro == -1) {
-            return "Não falta nenhum dia para o fim do projeto";
-        }
-
-        if (diresfipro < 90 && !project.isEntregue()) {
-            return "O projeto está apertado.";
-        } else {
-            return null;
-        }
+        System.out.println(projeto.status());
     }
 
 }
