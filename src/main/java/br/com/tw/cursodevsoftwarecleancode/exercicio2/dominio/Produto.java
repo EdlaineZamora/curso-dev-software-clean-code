@@ -23,12 +23,13 @@ public class Produto {
         }
     }
 
-    public String getDescricao() {
-        return this.descricao;
-    }
+    public void imprimirInformacoes() {
+        System.out.println("Descrição do produto: " + descricao);
 
-    public BigDecimal getValor() {
-        return this.valor;
+        if (valor.compareTo(BigDecimal.ZERO) == 0) {
+            System.out.println("O produto está de graça");
+        } else {
+            System.out.println("Valor do produto: " + valor);
+        }
     }
-
 }
