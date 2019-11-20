@@ -1,6 +1,4 @@
-package br.com.tw.cursodevsoftwarecleancode;
-
-import br.com.tw.cursodevsoftwarecleancode.exercise1.Project;
+package br.com.tw.cursodevsoftwarecleancode.exercise1;
 
 public class Main {
 
