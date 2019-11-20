@@ -1,10 +1,10 @@
-package br.com.tw.cursodevsoftwarecleancode.exercise2;
+package br.com.tw.cursodevsoftwarecleancode.exercicio2.endpoint;
 
 import java.math.BigDecimal;
 
 import static java.util.Objects.nonNull;
 
-public class ProdutoDTO {
+public class ProdutoRequest {
 
     private String descricao;
     private BigDecimal valor;

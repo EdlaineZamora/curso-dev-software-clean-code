@@ -1,4 +1,4 @@
-package br.com.tw.cursodevsoftwarecleancode.exercise1;
+package br.com.tw.cursodevsoftwarecleancode.exercicio1;
 
 public class Project {
     private int diresfipro;
